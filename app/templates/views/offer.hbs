@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>  Website   </title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+         <script src="https://cdn.tailwindcss.com"></script>
+          <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+  <style type="text/tailwindcss">
+    @layer utilities {
+      .content-auto {
+        content-visibility: auto;
+      }
+    }
+  </style>
+    </head>
+    <body>
+          {{>header}}
+          <section class="text-gray-600 body-font">
+  <div class="container px-5 py-24 mx-auto">
+    <div class="flex flex-col text-center w-full mb-20">
+      <h1 class="text-2xl font-medium title-font mb-4 text-gray-900 tracking-widest">OUR TEAM</h1>
+      <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table. Franzen you probably haven't heard of them.</p>
+    </div>
+    <div class="flex flex-wrap -m-4">
+      <div class="p-4 lg:w-1/2">
+        <div class="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
+          <img alt="team" class="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4" src="https://cdn.reinisfischer.com/sites/default/files/upload/1_221.jpg">
+          <div class="flex-grow sm:pl-8">
+            <h2 class="title-font font-medium text-lg text-gray-900">Hp</h2>
+            <h3 class="text-gray-500 mb-3">40,000₹</h3>
+            <p class="mb-4">12th Generation Intel® Core™ i5 processor
+Windows 11 
+, FHD display,
+512 GB SSD
+16 GB  RAM (2 x 8 GB)
+</p>
+            <span class="inline-flex">
+              <a class="text-gray-500">
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                  <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                </svg>
+              </a>
+              <a class="ml-2 text-gray-500">
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                  <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+                </svg>
+              </a>
+              <a class="ml-2 text-gray-500">
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                  <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+                </svg>
+              </a>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="p-4 lg:w-1/2">
+        <div class="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
+          <img alt="team" class="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4" src="data:image/jpeg;base64,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">
+          <div class="flex-grow sm:pl-8">
+            <h2 class="title-font font-medium text-lg text-gray-900">Dell</h2>
+            <h3 class="text-gray-500 mb-3">54,999₹</h3>
+            <p class="mb-4">Dell,intel i5,12th generation,1gb Hdd+ 256 ssd + 2gb graphics card</p>
+            <span class="inline-flex">
+              <a class="text-gray-500">
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                  <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                </svg>
+              </a>
+              <a class="ml-2 text-gray-500">
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                  <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+                </svg>
+              </a>
+              <a class="ml-2 text-gray-500">
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                  <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+                </svg>
+              </a>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="p-4 lg:w-1/2">
+        <div class="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
+          <img alt="team" class="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4" src="https://m.media-amazon.com/images/I/71ySiO7G7BL._AC_SX679_.jpg">
+          <div class="flex-grow sm:pl-8">
+            <h2 class="title-font font-medium text-lg text-gray-900">Hp</h2>
+            <h3 class="text-gray-500 mb-3">38,599₹</h3>
+            <p class="mb-4">Hp,intel i3,12th generation,1gb Hdd + 1gb graphics card.</p>
+            <span class="inline-flex">
+              <a class="text-gray-500">
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                  <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                </svg>
+              </a>
+              <a class="ml-2 text-gray-500">
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                  <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+                </svg>
+              </a>
+              <a class="ml-2 text-gray-500">
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                  <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+                </svg>
+              </a>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="p-4 lg:w-1/2">
+        <div class="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
+          <img alt="team" class="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4" src="https://cdn1.smartprix.com/rx-i4s3MEpJT-w1200-h1200/4s3MEpJT.jpg">
+          <div class="flex-grow sm:pl-8">
+            <h2 class="title-font font-medium text-lg text-gray-900">hp</h2>
+            <h3 class="text-gray-500 mb-3">50,999₹</h3>
+            <p class="mb-4">Hp,intel i5,12th generation, 512 ssd + 2gb graphics card</p>
+            <span class="inline-flex">
+              <a class="text-gray-500">
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                  <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                </svg>
+              </a>
+              <a class="ml-2 text-gray-500">
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                  <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+                </svg>
+              </a>
+              <a class="ml-2 text-gray-500">
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                  <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+                </svg>
+              </a>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+ {{>footer}}
+    </body>
+</html>
